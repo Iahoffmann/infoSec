@@ -1,25 +1,26 @@
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/infoSec/js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="/infoSec/styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/infoSec/js/index.js"></script>
 </head>
 <h1>
-Please enter an artists name:
+Please Enter An Artist's Name:
 </h1>
 <body>
 <form id="artistNameForm">
-  <input type="text" id="artistNameInput">
+  <input form="artistNameForm" type="text" id="artistNameInput">
   <button form="artistNameForm" type="submit">Submit</button>
 </form>
-<table id="information" border="1px">
+<table id="informationTable" border="1">
   <tr>
-    <td>
+    <td class="firstRow">
       Name
     </td>
-    <td>
+    <td class="firstRow">
       Image
     </td>
-    <td>
+    <td class="firstRow">
       Spotify Account
     </td>
   </tr>
