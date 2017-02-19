@@ -10,13 +10,13 @@ $(document).ready(function() {
   const buildTableRow = function(acc, artist) {
     var imgSrc = '/infoSec/styles/img/cantFind.jpg';//default image
     imgSrc = artist.images[artist.images.length-1] ? artist.images[artist.images.length-1].url : imgSrc;
-    const row = `<tr><td>${artist.name}</td><td><img src="${imgSrc}"></td><td><a href="${artist.external_urls.spotify}">${artist.external_urls.spotify}</a></td></tr>`;
+    const row = `<tr><td>${artist.name}</td><td><img src="${imgSrc}"></td><td><a rel="noopener noreferrer" target="_blank" href="${artist.external_urls.spotify}">${artist.external_urls.spotify}</a></td></tr>`;
     return acc + row;
   };
 
   const parseGenres = function(acc, artist) {
     artist.genres.forEach(function(genre) {
-      acc[genre] = acc[genre] ? acc.genre++ : 1;
+      acc[genre] = !isNaN(acc[genre]) ? (acc[genre] + 1) : 1;
     });
     return acc;
   };
