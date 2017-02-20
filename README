@@ -2,9 +2,7 @@ Purpose:
 This application can be used to query Spotify's database for artists by name.
 
 How to Use:
-It should work on any XAMP stack and can be started up by placing it in the project's folder and then starting the server.
-No additional installation is needed.
+It should work on any XAMP stack and can be started up by placing it in the project's folder and then starting the server. No additional installation should be needed. The app can be viewed locally at `localhost/infosec/index.html`
 
 Some Comments On Design:
-The sorting and genre parsing logic are done on the client side due to a greater familiarity with js than php. In a production situation
-these operations would probably be moved to the BE for better scalability of the application.
+The sorting and genre parsing logic are done on the client side due to a greater familiarity with js than php. In a production situation these operations would probably be moved to the BE for better scalability of the application.
